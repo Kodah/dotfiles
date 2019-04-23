@@ -11,6 +11,9 @@
 # Aliases
 	alias v="vim -p"
 	alias myrepos="cd ~/Repos"
+    alias mydotfile="cd ~/dotfiles"
+    alias gdm="echo behind ahead; git rev-list --left-right --count origin/master..."
+
 	mkdir -p /tmp/log
 
 	# This is currently causing problems (fails when you run it anywhere that isn't a git project's root directory)
