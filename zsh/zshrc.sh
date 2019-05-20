@@ -11,11 +11,18 @@
 # Aliases
 	alias v="vim -p"
 	alias myrepos="cd ~/Repos"
-    alias mydotfile="cd ~/dotfiles"
+    alias mytemprepos="cd ~/tempRepos"
+    alias mydotfiles="cd ~/dotfiles"
     alias gdm="echo behind ahead; git rev-list --left-right --count origin/master..."
+    alias fixaudio="sudo killall coreaudiod"
 
-	mkdir -p /tmp/log
+    alias cf-dev="cf login -a https://api.cf.dev-paas.bskyb.com -u thomas.sugarev@sky.uk -o dl-cg-mobile-service -s service"
+    alias cf-stage="cf login -a https://api.cf.stage-paas.bskyb.com -u thomas.sugarev@sky.uk -o dl-cg-mobile-service -s service"
+    alias cf-prod="cf login -a https://api.cf.paas.bskyb.com -u thomas.sugarev@sky.uk -o dl-cg-mobile-service -s service"
 
+    alias myalias="code ~/dotfiles/zsh/zshrc.sh"
+
+    mkdir -p /tmp/log
 	# This is currently causing problems (fails when you run it anywhere that isn't a git project's root directory)
 	# alias vs="v `git status --porcelain | sed -ne 's/^ M //p'`"
 
